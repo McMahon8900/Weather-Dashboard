@@ -6,20 +6,117 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <!--LINK FOR BOOTSTRAP-->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <!--LINK FOR FONTAWESOME-->
-    <linkrel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"crossorigin="anonymous"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!--LINK FOR STYLE.CSS-->
     <link rel="stylesheet" href="style.css">
     <title>Weather Dashboard</title>
 </head>
 
+
 <body>
     <div class="jumbotron">
         <h1 class="display-4 text-center">Weather Dashboard</h1>
     </div>
+    <div class="container">
+        <!-- ROW ONE COLUMN ONE-->
+        <div class="row r1">
+            <div class="col-md-4 c1">
+
+                <!-- SEARCH BOX -->
+                <h4>Search for a City:</h4>
+                <form id="city-form">
+                    <input type="text" id="city-input" />
+                    <button type="button" id="add-city" class="btn btn-primary">
+                        <i class="fa fa-search"></i>
+                    </button>
+                </form>
+
+                <div id="buttons-view" class="card" style="width: 18rem;">
+                    <ul class="list-group list-group-flush"></ul>
+                </div>
+            </div>
 
 
+            <div class="col-md-8 c2">
+                <div class="rowOne">
+                    <!--CITY, TEMP, HUMIDITY, WIND SPEED AND UV INDEX-->
+                    <h3 class="city"></h3>
+                    <p class="temp"></p>
+                    <p class="humidity"></p>
+                    <p class="wind"></p>
+                    <p class="uvIndex"></p>
+                </div>
 
+                <div class="forcast">
+                    <h4>5-Day Forcast:</h4>
+                </div>
+
+
+                <div class="row rowTwo justify-content-between">
+                    <!--5 CARDS TO DISPLAY INFORMATION FROM "" -->
+                    <div class="col-md-2">
+                        <div class="card" style="width: 8rem;">
+                            <div class="card-body">
+                                <h5 class="card-title dateOne"></h5>
+                                <p class="card-text iconOne"></p>
+                                <p class="card-text tempOne"></p>
+                                <p class="card-text humidityOne"></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-2">
+                        <div class="card" style="width: 8rem;">
+                            <div class="card-body">
+                                <h5 class="card-title dateTwo"></h5>
+                                <p class="card-text iconTwo"></p>
+                                <p class="card-text tempTwo"></p>
+                                <p class="card-text humidityTwo"></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-2">
+                        <div class="card" style="width: 8rem;">
+                            <div class="card-body">
+                                <h5 class="card-title dateThree"></h5>
+                                <p class="card-text iconThree"></p>
+                                <p class="card-text tempThree"></p>
+                                <p class="card-text humidityThree"></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-2">
+                        <div class="card" style="width: 8rem;">
+                            <div class="card-body">
+                                <h5 class="card-title dateFour"></h5>
+                                <p class="card-text iconFour"></p>
+                                <p class="card-text tempFour"></p>
+                                <p class="card-text humidityFour"></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-2">
+                        <div class="card" style="width: 8rem;">
+                            <div class="card-body">
+                                <h5 class="card-title dateFive"></h5>
+                                <p class="card-text iconFive"></p>
+                                <p class="card-text tempFive"></p>
+                                <p class="card-text humidityFive"></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
 </body>
+
 </html>
